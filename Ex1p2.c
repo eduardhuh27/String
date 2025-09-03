@@ -13,7 +13,7 @@ void main ()
     }
     else
     {
-        printf("Nao foi copiado. ");
+        printf("Nao foi copiado. %s",strcat(s1,s2));
     }
 }
 int strcopy (char s1[],char s2[])
@@ -27,5 +27,5 @@ int strcopy (char s1[],char s2[])
     }
     printf("%s\n",s1);
 
-
+     return 1;
 }
