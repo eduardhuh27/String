@@ -7,7 +7,7 @@ void main ()
     char s1[20]="Aleatorio";
     printf("%d",strlenC (s1));
 }
-int strlenC (char *s1[])
+int strlenC (char s1[])
 {
     int i,cont=0;
 

@@ -9,11 +9,11 @@ void main ()
     char s2[8]= "copiar";
     if(strcontacatenacao(s1,s2)==1)
     {
-    printf("Copiado com sucesso.");
+    printf("Concatenado com sucesso.");
     }
     else
     {
-        printf("Nao foi copiado.");
+        printf("Nao foi concatenado.");
     }
 }
 int strcontacatenacao (char s1[],char s2[])
