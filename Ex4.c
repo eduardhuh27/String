@@ -5,7 +5,7 @@ void remover (char a[],char g, int tamanho);
 
 void main ()
 {
-    char a[20]="vogcegegbgogco";
+    char a[20]="vogggg";
     char g='g';
     remover(a,g,strlen(a));
 }
