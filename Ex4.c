@@ -1,26 +1,28 @@
-#include <stdio.h>
-#include <string.h>
 
-void remover (char a[],char g, int tamanho);
+#include <stdio.h>
+
+void remover (char a[],char g);
 
 void main ()
 {
     char a[20]="vogggg";
     char g='g';
-    remover(a,g,strlen(a));
+    remover(a,g);
+    printf("%s",a);
 }
-
-void remover (char a[],char g, int tamanho)
+void remover (char a[],char g)
 {
-    int i;
+    int i,j;
 
-    for (i=0;i<tamanho;i++)
+    for (i = 0 ;a[i] != '\0'; i++)
     {
-        if(a[i]==g)
+        if(a[i] == g)
         {
-            a[i]=1;
+           for(j = i ;a[j] != 0; j++)
+               {
+                   a[j] = a[j +1];
+               }
+            i--;
         }
     }
-    printf("%s",a);
-
 }
